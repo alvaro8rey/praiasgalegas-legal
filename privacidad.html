@@ -32,64 +32,83 @@
   </header>
 
   <h1>Política de Privacidad</h1>
-  <div class="updated">Última actualización: junio de 2026</div>
+  <div class="updated">Última actualización: septiembre de 2026 · <a href="privacidade.html">Galego</a></div>
 
-  <p>Esta Política de Privacidad describe cómo <strong>Praias Galegas</strong> recopila, usa y protege la información de los usuarios de la aplicación móvil para iOS.</p>
+  <p>Esta Política de Privacidad describe cómo <strong>Praias Galegas</strong> trata la información de los usuarios de la aplicación móvil para iOS.</p>
 
-  <h2>1. Información que recopilamos</h2>
-  <p>Praias Galegas recopila únicamente la información necesaria para el funcionamiento de la aplicación:</p>
+  <h2>1. Responsable del tratamiento</h2>
+  <p>[COMPLETAR: nombre y apellidos o razón social del titular, NIF y dirección postal de contacto]<br>
+  Correo electrónico: <a href="mailto:praiasgalegas@outlook.es">praiasgalegas@outlook.es</a></p>
+
+  <h2>2. Información que tratamos</h2>
   <ul>
-    <li><strong>Localización (opcional):</strong> Usamos tu localización para mostrarte las playas más cercanas y ordenar los resultados por distancia. Esta información no se almacena en nuestros servidores ni se comparte con terceros. Solo se usa localmente en tu dispositivo.</li>
-    <li><strong>Datos de uso anónimos:</strong> Podemos recopilar datos anónimos y agregados sobre el uso de la aplicación para mejorar la experiencia del usuario.</li>
-    <li><strong>Preferencias y favoritas:</strong> Tus playas favoritas, planificaciones guardadas y preferencias de configuración se almacenan localmente en tu dispositivo mediante SwiftData.</li>
+    <li><strong>Localización (opcional):</strong> se usa para mostrar las playas más cercanas, calcular distancias y responder a las funciones de Siri y Atajos como «mejor playa cerca de mí». Se procesa en tu dispositivo y <strong>no se envía ni se almacena en nuestros servidores</strong>.</li>
+    <li><strong>Datos guardados en tu dispositivo:</strong> playas favoritas, planificaciones guardadas, valoraciones, preferencias de la aplicación y datos para el widget. Además, la aplicación guarda en el Llavero de iOS un <strong>identificador aleatorio de dispositivo</strong> (no contiene tu nombre ni datos de tu cuenta) que se conserva aunque reinstales la app.</li>
+    <li><strong>Registro de uso de las funciones de inteligencia artificial (en nuestros servidores):</strong> cada vez que generas una planificación, una ruta multi-playa o cambias una parada, guardamos un registro con:
+      <ul>
+        <li><em>Si tienes suscripción Premium:</em> el identificador de suscripción que proporciona Apple (un código seudónimo; no incluye tu nombre ni tu correo), el tipo de uso, la playa, la fecha y hora, la versión de la app, el modelo de IA utilizado y la cantidad de texto procesado.</li>
+        <li><em>Si no tienes suscripción:</em> el identificador aleatorio de dispositivo mencionado arriba y una <strong>huella criptográfica (hash) de tu dirección IP</strong>, no la IP en claro, junto con el tipo de uso, la playa y la fecha.</li>
+      </ul>
+      Sirve para aplicar los límites de uso de cada plan, evitar abusos, controlar costes y atender consultas de soporte.</li>
+    <li><strong>Anuncios (versión gratuita):</strong> ver el apartado 4.</li>
+  </ul>
+  <p>No utilizamos herramientas de analítica de terceros ni creamos perfiles sobre ti.</p>
+
+  <h2>3. Para qué usamos la información y con qué base legal</h2>
+  <ul>
+    <li>Prestar el servicio (playas cercanas, favoritas, planificaciones, widget, notificaciones): ejecución del servicio que solicitas.</li>
+    <li>Aplicar límites de uso, prevenir abusos y controlar costes del servicio de IA: interés legítimo.</li>
+    <li>Mostrar anuncios personalizados o no personalizados en la versión gratuita: tu consentimiento, que puedes cambiar en cualquier momento.</li>
+    <li>Enviarte notificaciones de tus playas favoritas: solo si las activas.</li>
+  </ul>
+  <p><strong>Conservación:</strong> los registros de uso se conservan como máximo [COMPLETAR: p. ej. 24] meses. Los datos guardados en tu dispositivo permanecen ahí hasta que los borres o desinstales la aplicación.</p>
+
+  <h2>4. Anuncios y consentimiento</h2>
+  <p>La versión gratuita muestra anuncios de <strong>Google AdMob</strong>. Para ello, Google puede recopilar identificadores del dispositivo, dirección IP, datos de interacción con los anuncios y datos de rendimiento de la app, y usarlos para servir y medir anuncios (personalizados solo si lo consientes). Más información: <a href="https://policies.google.com/technologies/partner-sites">cómo usa Google los datos</a> y su <a href="https://policies.google.com/privacy">política de privacidad</a>.</p>
+  <ul>
+    <li>Al abrir la app por primera vez (en el Espacio Económico Europeo y Reino Unido) verás un <strong>formulario de consentimiento</strong> de Google donde puedes aceptar, rechazar o gestionar tus opciones.</li>
+    <li>Puedes <strong>cambiar tu elección en cualquier momento</strong> desde <em>Perfil → Privacidad y anuncios</em>.</li>
+    <li>La aplicación <strong>no solicita el permiso de seguimiento de Apple (ATT)</strong> ni accede al identificador de publicidad (IDFA).</li>
+    <li>Los usuarios con suscripción <strong>Premium no ven anuncios</strong> y no se carga el servicio publicitario.</li>
   </ul>
 
-  <h2>2. Cómo usamos la información</h2>
+  <h2>5. Servicios de terceros y destinatarios</h2>
   <ul>
-    <li>Mostrarte playas ordenadas por proximidad a tu localización</li>
-    <li>Guardar tus playas favoritas y planificaciones</li>
-    <li>Enviarte notificaciones sobre condiciones meteorológicas en tus playas favoritas (solo si has activado esta opción)</li>
-    <li>Mejorar la aplicación con base en los datos de uso anónimos</li>
+    <li><strong>Supabase</strong> (servidores en la Unión Europea): base de datos de playas y registro de uso descrito arriba, y las funciones en la nube que conectan la app con el servicio de IA. <a href="https://supabase.com/privacy">Política de privacidad</a></li>
+    <li><strong>Anthropic Claude</strong> (Estados Unidos): genera las planificaciones. Las consultas se envían desde nuestro servidor, no directamente desde tu dispositivo, y contienen la playa, el día y la franja horaria, tus preferencias y lugares cercanos; si has valorado planificaciones, pueden incluir tus valoraciones y comentarios recientes para personalizar el resultado. <strong>No enviamos tu nombre, correo ni ubicación.</strong> Evita escribir datos personales en los comentarios de valoración. <a href="https://www.anthropic.com/privacy">Política de privacidad</a></li>
+    <li><strong>Apple</strong>: <em>WeatherKit</em> (previsión del tiempo), <em>MapKit</em> (mapas y rutas), <em>StoreKit</em> (suscripciones) y las funciones del sistema (Siri, Atajos, Spotlight, compartir). <a href="https://www.apple.com/legal/privacy/">Política de privacidad</a> · <a href="https://weatherkit.apple.com/legal-attribution.html">Atribución de Apple Weather</a></li>
+    <li><strong>MeteoGalicia</strong>: datos meteorológicos y de playas. <a href="https://www.meteogalicia.gal">meteogalicia.gal</a></li>
+    <li><strong>Open-Meteo</strong>: índice UV y datos solares. <a href="https://open-meteo.com">open-meteo.com</a></li>
+    <li><strong>Google Places</strong>: restaurantes y puntos de interés cerca de las playas (se envían las coordenadas de la playa, no tu ubicación). <a href="https://policies.google.com/privacy">Política de privacidad de Google</a></li>
+    <li><strong>Google AdMob y Google UMP</strong>: anuncios y formulario de consentimiento (apartado 4).</li>
   </ul>
+  <p>Algunos de estos proveedores (por ejemplo Anthropic y Google) están en Estados Unidos; las transferencias se realizan con las garantías previstas en el RGPD (como las cláusulas contractuales tipo o el Marco de Privacidad de Datos UE-EE. UU.).</p>
 
-  <h2>3. Servicios de terceros</h2>
-  <p>Praias Galegas usa los siguientes servicios externos:</p>
-  <ul>
-    <li><strong>MeteoGalicia:</strong> Para obtener datos meteorológicos y previsión del tiempo. <a href="https://www.meteogalicia.gal">meteogalicia.gal</a></li>
-    <li><strong>Supabase:</strong> Base de datos en la nube para almacenar información de las playas. Los datos guardados son únicamente datos geográficos y meteorológicos de las playas, no datos personales de los usuarios. <a href="https://supabase.com/privacy">Política de privacidad de Supabase</a></li>
-    <li><strong>Google Places:</strong> Para obtener información de restaurantes y puntos de interés próximos a las playas. <a href="https://policies.google.com/privacy">Política de privacidad de Google</a></li>
-    <li><strong>Open-Meteo:</strong> Para el índice UV y datos solares. <a href="https://open-meteo.com">open-meteo.com</a></li>
-    <li><strong>Anthropic Claude:</strong> Para generar planificaciones personalizadas de rutas. Las consultas enviadas no incluyen datos personales identificables. <a href="https://www.anthropic.com/privacy">Política de privacidad de Anthropic</a></li>
-  </ul>
+  <h2>6. Notificaciones</h2>
+  <p>Si activas las notificaciones, la aplicación puede enviarte alertas sobre las condiciones de tus playas favoritas. Se generan en tu dispositivo. Puedes desactivarlas en cualquier momento desde los Ajustes de tu iPhone o desde la propia aplicación.</p>
 
-  <h2>4. Localización</h2>
-  <p>La aplicación solicita permiso para acceder a tu localización cuando quieres ver las playas más cercanas. El acceso a la localización es completamente opcional. Tu localización <strong>nunca se envía ni almacena en nuestros servidores</strong>.</p>
+  <h2>7. Compras dentro de la aplicación</h2>
+  <p>La suscripción Premium se gestiona a través del App Store y la procesa Apple, sujeta a su <a href="https://www.apple.com/legal/privacy/">política de privacidad</a>. No almacenamos datos de pago. Para comprobar tu suscripción y aplicar tus límites, nuestro servidor recibe el comprobante firmado de Apple y verifica su autenticidad; de él solo conservamos el identificador de suscripción descrito en el apartado 2.</p>
 
-  <h2>5. Notificaciones</h2>
-  <p>Si activas las notificaciones, la aplicación puede enviarte alertas sobre las condiciones meteorológicas de tus playas favoritas. Puedes desactivar las notificaciones en cualquier momento desde los Ajustes de tu iPhone o desde la propia aplicación.</p>
+  <h2>8. Tus derechos</h2>
+  <p>De conformidad con el RGPD y la normativa española, puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad, y retirar tu consentimiento en cualquier momento, escribiendo a <a href="mailto:praiasgalegas@outlook.es">praiasgalegas@outlook.es</a>. Para localizar tus registros de uso podremos pedirte que nos ayudes a identificar tu dispositivo o suscripción. También puedes presentar una reclamación ante la <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</p>
 
-  <h2>6. Compras dentro de la aplicación</h2>
-  <p>Praias Galegas ofrece una suscripción Premium de pago a través del App Store de Apple. Las transacciones son procesadas por Apple y sujetas a su <a href="https://www.apple.com/legal/privacy/">política de privacidad</a>. No almacenamos datos de pago.</p>
+  <h2>9. Menores de edad</h2>
+  <p>Praias Galegas no está dirigida a menores de 14 años y no recopila conscientemente información personal de menores. Si eres padre, madre o tutor/a y crees que un menor ha proporcionado datos, contáctanos.</p>
 
-  <h2>7. Menores de edad</h2>
-  <p>Praias Galegas no está dirigida a menores de 13 años y no recopila conscientemente información personal de menores. Si eres padre/madre o tutor/a y crees que tu hijo ha proporcionado información personal, contáctanos.</p>
+  <h2>10. Seguridad</h2>
+  <p>Aplicamos medidas técnicas y organizativas adecuadas para proteger la información, entre ellas comunicaciones cifradas, acceso restringido a los registros de uso y almacenamiento de las claves de los servicios externos únicamente en nuestros servidores.</p>
 
-  <h2>8. Seguridad</h2>
-  <p>Implementamos medidas técnicas y organizativas adecuadas para proteger la información contra el acceso no autorizado, la alteración, la divulgación o la destrucción.</p>
-
-  <h2>9. Cambios en esta política</h2>
-  <p>Podemos actualizar esta Política de Privacidad periódicamente. Te notificaremos cualquier cambio significativo mediante la actualización de la fecha en la parte superior de este documento. Recomendamos revisar esta política regularmente.</p>
-
-  <h2>10. Tus derechos</h2>
-  <p>De conformidad con el Reglamento General de Protección de Datos (RGPD), tienes derecho a acceder, rectificar, suprimir y portar tus datos personales, así como a oponerte a su tratamiento. Para ejercer estos derechos, contáctanos.</p>
+  <h2>11. Cambios en esta política</h2>
+  <p>Podemos actualizar esta política. Indicaremos la fecha de la última actualización en la parte superior y, si el cambio es importante, lo avisaremos en la aplicación.</p>
 
   <div class="contact-box">
     <p><strong>Contacto</strong><br>
-    Si tienes preguntas sobre esta Política de Privacidad, puedes contactar con nosotros en:<br>
+    ¿Preguntas sobre esta política?<br>
     📧 <a href="mailto:praiasgalegas@outlook.es">praiasgalegas@outlook.es</a></p>
   </div>
 
-  <footer>© 2026 Praias Galegas · <a href="terminos.html">Términos y condiciones</a></footer>
+  <footer>© 2026 Praias Galegas · <a href="terminos.html">Términos y condiciones</a> · <a href="soporte.html">Soporte</a></footer>
 </div>
 </body>
 </html>
